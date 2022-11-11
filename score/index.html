@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="gbk">
+	<title>中考模拟快捷算分</title>
+	<script language="javascript">
+		function print() {
+            var a = parseFloat(document.getElementById("yw").value);
+            var b = parseFloat(document.getElementById("sx").value);
+            var c = parseFloat(document.getElementById("yy").value);
+            var d = parseFloat(document.getElementById("wh").value);
+            var e = parseFloat(document.getElementById("zs").value);
+            var f = parseFloat(document.getElementById("ds").value);
+            var zf =parseFloat(a + b + c + 0.6 * d + 0.45 * e + 0.6 * f);
+			var element = document.getElementById("zf")
+			element.innerHTML = "总分：" + zf
+		}
+	</script>
+</head>
+<body>
+	<div align="center">
+		<p>语文成绩：</p>
+		<input type="text" name="yw" id="yw" placeholder="语文成绩" />
+		<p>数学成绩：</p>
+		<input type="text" name="sx" id="sx" placeholder="数学成绩" />
+		<p>英语成绩：</p>
+		<input type="text" name="yy" id="yy" placeholder="英语成绩" />
+		<p>物化成绩（两科之和）：</p>
+		<input type="text" name="wh" id="wh" placeholder="物化成绩" />
+		<p>政史成绩（两科之和）：</p>
+		<input type="text" name="zs" id="zs" placeholder="政史成绩" />
+		<p>地生成绩（两科之和）：</p>
+		<input type="text" name="ds" id="ds" placeholder="地生成绩" />
+
+		<input type="submit" value="提交" onclick="print()" />
+
+		<h1 id="zf">总分：</h1>
+	</div>
+</body>
+</html>
