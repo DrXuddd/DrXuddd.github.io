@@ -9,10 +9,11 @@
 	var a = parseFloat(document.getElementById("yw").value);
 	var b = parseFloat(document.getElementById("sx").value);
 	 var c = parseFloat(document.getElementById("yy").value);
-	var d = parseFloat(document.getElementById("wh").value);
+	var d = parseFloat(document.getElementById("wl").value);
+    var dd = parseFloat(document.getElementById("hx").value);
 	var e = parseFloat(document.getElementById("zs").value);
 	var f = parseFloat(document.getElementById("ds").value);
-	var zf =parseFloat(a + b + c + 0.6 * d + 0.45 * e + 0.6 * f);
+	var zf =parseFloat(a + b + c + 0.7 * d + 0.5 * dd + 0.45 * e + 0.6 * f);
 	var element = document.getElementById("zf");
 	if (zf >= 630) {
 		alert("你可真是    太    牛    逼    了！");
@@ -35,13 +36,17 @@
 			<input type="text" name="yw" id="yw" placeholder="语文成绩" />
 			<p>数学成绩：</p>
 			<input type="text" name="sx" id="sx" placeholder="数学成绩" />
+			<p>英语成绩：</p>
+			<input type="text" name="yy" id="yy" placeholder="英语成绩" />
 		</div>
 
 		<div id="div2">
-			<p>英语成绩：</p>
-			<input type="text" name="yy" id="yy" placeholder="英语成绩" />
-			<p>物化成绩（两科之和）：</p>
-			<input type="text" name="wh" id="wh" placeholder="物化成绩" />
+			
+			<p>物理成绩：</p>
+			<input type="text" name="wl" id="wl" placeholder="物理成绩" />
+			<p>化学成绩：</p>
+			<input type="text" name="hx" id="hx" placeholder="化学成绩" />
+
 		</div>
 
 		<div id="div3">
