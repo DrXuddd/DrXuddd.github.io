@@ -6,15 +6,18 @@
 	<title>中考快捷模拟算分</title>
 	<script language="javascript">
 		function print() {
-            var a = parseFloat(document.getElementById("yw").value);
-            var b = parseFloat(document.getElementById("sx").value);
-            var c = parseFloat(document.getElementById("yy").value);
-            var d = parseFloat(document.getElementById("wh").value);
-            var e = parseFloat(document.getElementById("zs").value);
-            var f = parseFloat(document.getElementById("ds").value);
-            var zf =parseFloat(a + b + c + 0.6 * d + 0.45 * e + 0.6 * f);
-			var element = document.getElementById("zf");
-			element.innerHTML = "总分：" + zf;
+	var a = parseFloat(document.getElementById("yw").value);
+	var b = parseFloat(document.getElementById("sx").value);
+	 var c = parseFloat(document.getElementById("yy").value);
+	var d = parseFloat(document.getElementById("wh").value);
+	var e = parseFloat(document.getElementById("zs").value);
+	var f = parseFloat(document.getElementById("ds").value);
+	var zf =parseFloat(a + b + c + 0.6 * d + 0.45 * e + 0.6 * f);
+	var element = document.getElementById("zf");
+	if (zf >= 630) {
+		alert("你可真是    太    牛    逼    了！");
+}
+	element.innerHTML = "总分：" + zf;
 		}
 	</script>
 	<style type="text/css">
